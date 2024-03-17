@@ -1,0 +1,20 @@
+	public static void doctorRating(Doctor[]arr)
+	{
+		double count =0;
+		int sum = 0;
+		for(int i=0; i<arr.length; i++)
+		{
+			count = 0;
+			sum = 0;
+			System.out.println("enter a rate");
+			double r = input.nextInt();
+			while(r!=-1)
+			{
+				sum++;
+				count =+ r;
+				System.out.println("enter a rate");
+				r = input.nextInt();
+			}
+			arr[i].setRate(count/sum);
+		}
+	}
